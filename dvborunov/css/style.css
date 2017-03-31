@@ -1,0 +1,181 @@
+body {
+    background-color: rgba(40, 42, 71, 0.91);
+    color: white;
+}
+
+.navbar-upper {
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 0px;
+    background-color: rgba(44, 54, 194, 0.79);
+    height: 55px;
+    border-radius: 0px;
+    border-color: black;
+}
+
+.navbar {
+    border-top: 0px;
+    border-color: black;
+}
+
+.navbar-lower {
+    background-color: rgba(88, 113, 204, 0.79);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-color: black;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    font-family: 'Exo 2', sans-serif;
+    text-align: center;
+    border-color: black;
+}
+
+@media (min-width: 768px) {
+    .navbar-default .navbar-brand {
+        width: 300px;
+    }
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-color: rgba(44, 54, 194, 0.00);
+    color: white;
+    font-weight: bold;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.portrait {
+    z-index: -10;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .portrait > img {
+        width: 80vw;
+    }
+    /*.portrait {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }*/
+}
+
+.quote {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 24px;
+    position: absolute;
+    text-align: justify;
+    top: 380px;
+    left: 10%;
+    right: 70%
+}
+
+@media (max-width: 400px) {
+    .quote {
+        display: none;
+    }
+}
+
+.quote-author::before {
+    content: "\A"; display: block;
+}
+
+.quote-author {
+    font-size: 20px;
+    color: rgb(158, 158, 158);
+    text-align: right;
+    white-space:pre;
+    font-style: italic;
+}
+
+.bio {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+    position: absolute;
+    text-align: justify;
+    top: 320px;
+    left: 80%;
+    right: 5%
+}
+
+.bio > a {
+    color: rgb(158, 158, 158);
+}
+
+@media (max-width: 777px) {
+    .bio {
+        font-family: 'Exo 2', sans-serif;
+        font-size: 14px;
+        text-align: justify;
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 90vw;
+    }
+}
+
+@media (min-width: 1500px) {
+    .bio {
+        font-family: 'Exo 2', sans-serif;
+        font-size: 18px;
+        text-align: justify;
+        width: 200px;
+        left: inherit;
+        right: 20%;
+    }
+}
+
+.buttons {
+    position: relative;
+    top: 666px;
+    text-align: center;
+}
+
+.buttons > button {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 28px;
+    width: 250px;
+    height: 100px;
+    border-radius: 0px;
+    background-color: rgba(44, 54, 194, 0.79);
+    color: white;
+}
+
+@media (max-width: 777px) {
+    .buttons {
+        top: 95vw;
+    }
+    .buttons > button {
+        width: 80vw;
+    }
+    .buttons > button::after {
+        content: "\A"; display: block;
+    }
+}
+
+.tiles {
+    position: relative;
+    top: 80vh;
+}
+
+@media (max-width: 777px) {
+    .tiles {
+        position: relative;
+        top: 105vw;
+    }
+}
+
+.tile {
+    border: 1px solid black;
+    color: black;
+    background-color: rgb(220, 220, 220);
+    margin-bottom: 10px;
+    padding: 5px;
+}
