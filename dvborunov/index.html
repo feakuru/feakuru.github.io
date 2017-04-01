@@ -12,7 +12,7 @@
     <link href="css/style.css" rel="stylesheet">
 
     <!-- My Google fonts !-->
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:800|Exo+2|Exo:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:800|Exo+2|Exo:900|Lora" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -25,12 +25,6 @@
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".collapsed-menus" aria-expanded="false">
-                    <span class="sr-only">Включить навигацию</span>
-                    <span class="icon-bar" style="color: white;"></span>
-                    <span class="icon-bar" style="color: white;"></span>
-                    <span class="icon-bar" style="color: white;"></span>
-                </button>
                 <a class="navbar-brand" href="#">Д. В. БОРУНОВ</a>
             </div>
 
@@ -49,9 +43,9 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse collapsed-menus in" aria-expanded="true">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Персональная информация</a></li>
-                    <li class="active"><a href="#">Депутатская деятельность</a></li>
-                    <li class="active"><a href="#">Контакты</a></li>
+                    <li class="active"><a href="personal.html">Персональная информация</a></li>
+                    <li class="active"><a href="activity.html">Депутатская деятельность</a></li>
+                    <li class="active"><a href="contacts.html">Контакты и юридические услуги</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -65,12 +59,12 @@
             <div class="quote-author">- Дмитрий Борунов</div>
         </div>
         <div class="bio">
-            Дмитрий Борунов родился тогда-то в семье такой-то. В школе он никого не бил, всем помогал. В ВУЗе учится на отлично. Он с детства <a>мечтал...</a>
+            Дмитрий Борунов родился тогда-то в семье такой-то. В школе он никого не бил, всем помогал. В ВУЗе учится на отлично. Он с детства <a href="personal.html">мечтал...</a>
         </div>
         <div class="buttons">
-            <button type="button" class="btn btn-default">Общественная<br>деятельность</button>
-            <button type="button" class="btn btn-default">Пресс-релизы<br>и интервью</button>
-            <button type="button" class="btn btn-default">Политический<br>портрет</button>
+            <button type="button" class="btn btn-default" onclick="location='activity.html';">Общественная<br>деятельность</button>
+            <button type="button" class="btn btn-default" onclick="location='activity.html';">Пресс-релизы<br>и интервью</button>
+            <button type="button" class="btn btn-default" onclick="location='personal.html';">Политический<br>портрет</button>
         </div>
 
         <div class="tiles">
@@ -81,33 +75,33 @@
                 <div class="col-sm-12 col-md-6 col-lg-4" style="padding: 5px;">
                     <div class="tile" align="justify">
                         <img src="img/testimg1.jpg" class="img-responsive" />
-                        <h2 style="font-family: 'Exo 2', sans-serif; margin-top: 5px;">Заголовок</h2>
+                        <h2>Заголовок</h2>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        <p align="right"><button style="border-radius: 1px; border-color: black;" class="btn btn-default" name="button">10/05/2017 | Далее...</button></p>
+                        <p align="right"><button style="border-radius: 1px; border-color: black;" class="btn btn-default" name="button" onclick="location='material.html';">10/05/2017 | Далее...</button></p>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4" style="padding: 5px;">
                     <div class="tile" align="justify">
                         <img src="img/testimg2.jpg" class="img-responsive" />
-                        <h2 style="font-family: 'Exo 2', sans-serif; margin-top: 5px;">Заголовок</h2>
+                        <h2>Заголовок</h2>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        <p align="right"><button style="border-radius: 1px; border-color: black;" class="btn btn-default" name="button">10/05/2017 | Далее...</button></p>
+                        <p align="right"><button style="border-radius: 1px; border-color: black;" class="btn btn-default" name="button" onclick="location='material.html';">10/05/2017 | Далее...</button></p>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4" style="padding: 5px;">
                     <div class="tile" align="justify">
                         <img src="img/testimg3.jpg" class="img-responsive" />
-                        <h2 style="font-family: 'Exo 2', sans-serif; margin-top: 5px;">Заголовок</h2>
+                        <h2>Заголовок</h2>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        <p align="right"><button style="border-radius: 1px; border-color: black;" class="btn btn-default" name="button">10/05/2017 | Далее...</button></p>
+                        <p align="right"><button style="border-radius: 1px; border-color: black;" class="btn btn-default" name="button" onclick="location='material.html';">10/05/2017 | Далее...</button></p>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4" style="padding: 5px;">
                     <div class="tile" align="justify">
                         <img src="img/testimg1.jpg" class="img-responsive" />
-                        <h2 style="font-family: 'Exo 2', sans-serif; margin-top: 5px;">Заголовок</h2>
+                        <h2>Заголовок</h2>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        <p align="right"><button style="border-radius: 1px; border-color: black;" class="btn btn-default" name="button">10/05/2017 | Далее...</button></p>
+                        <p align="right"><button style="border-radius: 1px; border-color: black;" class="btn btn-default" name="button" onclick="location='material.html';">10/05/2017 | Далее...</button></p>
                     </div>
                 </div>
             </div>

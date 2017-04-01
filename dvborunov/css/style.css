@@ -36,6 +36,10 @@ body {
     border-color: black;
 }
 
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: white;
+}
+
 @media (min-width: 768px) {
     .navbar-default .navbar-brand {
         width: 300px;
@@ -61,10 +65,11 @@ body {
     .portrait > img {
         width: 80vw;
     }
-    /*.portrait {
-        margin-left: 10vw;
-        margin-right: 10vw;
-    }*/
+
+    .portrait > table {
+        width: 80vw;
+        height: 80vw;
+    }
 }
 
 .quote {
@@ -178,4 +183,89 @@ body {
     background-color: rgb(220, 220, 220);
     margin-bottom: 10px;
     padding: 5px;
+}
+
+.material-header {
+    padding-bottom: 5px;
+}
+
+h2 {
+    font-family: 'Exo 2', sans-serif;
+    margin-top: 5px;
+}
+
+.image-info {
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    margin-top: 10px;
+    color: rgb(100, 100, 100);
+    font-style: italic;
+}
+
+hr {
+    border: none;
+    color: gray;
+    background-color: gray;
+    height: 1px;
+}
+
+.material-text {
+    font-family: 'Lora', serif;
+    text-align: justify;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.material-text > p {
+    text-indent: 50px;
+}
+
+.material-subscription::before {
+    content: "— ";
+}
+
+.material-subscription {
+    text-align: right;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    color: rgb(80, 80, 80);
+    font-style: italic;
+    padding-bottom: 20px;
+    padding-right: 80px;
+}
+
+@media (max-width: 666px) {
+    .material-subscription {
+        padding-right: 30px;
+    }
+}
+
+.social-links {
+    background: url("/dvborunov/img/face.jpg");
+    border-radius: 50%;
+    width: 640px;
+    height: 640px;
+    background-size: 100% auto;
+    margin: 0 auto;
+}
+
+.social-link-row {
+    height: 20%;
+}
+
+.social-link-col {
+    width: 20%;
+}
+
+@media (min-width: 666px) {
+    .leftimg {
+        float:left;
+        max-width: 30%;
+        margin: 7px 7px 7px 0;
+    }
+    .rightimg  {
+        float: right;
+        max-width: 30%;
+        margin: 7px 0 7px 7px;
+    }
 }
