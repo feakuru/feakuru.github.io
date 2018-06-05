@@ -6,13 +6,21 @@ import GeneralSkills from './GeneralSkills.js';
 import CategorizedSkills from './CategorizedSkills.js';
 
 class App extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            lang: 'ru'
+        };
+    }
+
     render() {
         return (
             <div className="app">
-                <Navbar />
-                <Bio />
-                <GeneralSkills />
-                <CategorizedSkills />
+                <Navbar lang={ this.state.lang }
+                        setLang={ newLang => this.setState({lang: newLang}) }/>
+                <Bio lang={ this.state.lang } />
+                <GeneralSkills lang={ this.state.lang } />
+                <CategorizedSkills lang={ this.state.lang } />
             </div>
         );
     } 
