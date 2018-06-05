@@ -3,6 +3,14 @@ import FontAwesome from 'react-fontawesome';
 import translate from './translation.js'
 
 class Navbar extends Component {
+    downloadAsDoc() {
+        alert("Sorry, not implemented yet.");
+    }
+
+    downloadAsPdf() {
+        alert("Sorry, not implemented yet.");
+    }
+
     render() {
         return (
             <ul className="navbar">
