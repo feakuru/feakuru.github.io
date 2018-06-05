@@ -4,7 +4,7 @@ import translate from './translation.js'
 class Bio extends Component {
     render() {
         return (
-            <div>
+            <div className="screen">
                 To be implemented.
             </div>
         );
