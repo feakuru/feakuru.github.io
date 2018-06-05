@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import translate from './translation.js'
 
 class Bio extends Component {
     render() {
