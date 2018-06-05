@@ -47,12 +47,6 @@ class Bio extends Component {
                                         "Мои основные языки программирования - Python 3 и C++, хотя у меня есть опыт и с другими языками. " +
                                         "Мой профессиональный опыт практически целиком так или иначе связан с Web-разработкой."
                                 },
-                                //  16.10.Достаточно хорошо знаю английский язык: без труда читаю профессиональную 
-                                //  литературу и общаюсь с людьми на любые темы. Умею гуглить, стараюсь не задавать
-                                //   глупых вопросов, если уверен, что смогу найти ответ в интернете. 
-                                //   Прохожу курс Cisco CCNA, пока не получил сертификат, но уже хорошо понимаю модель
-                                // OSI и могу строить эффективные сети небольших размеров, а также администрировать их.
-                                // В плане soft skills проблем нет.
                         this.props.lang
                     )
                 }
@@ -76,6 +70,15 @@ class Bio extends Component {
                         </li>
                         <li>
                             <a href="mailto:feanarokurufinve@gmail.com">E-mail</a>
+                        </li>
+                        <li>
+                            <a href="https://stackexchange.com/users/7648139/dmitry-orlov">StackOverflow</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/feakuru">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/dmitry-orlov-05515a11a/">LinkedIn</a>
                         </li>
                     </ul>
                 </div>
