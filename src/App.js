@@ -1,21 +1,22 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './Navbar.js';
+import Bio from './Bio.js';
+import GeneralSkills from './GeneralSkills.js';
+import CategorizedSkills from './CategorizedSkills.js';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">My resume is currently under construction.</h1>
-        </header>
-        <p className="App-intro">
-          Please, be patient.
-        </p>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div>
+                <Navbar />
+                <Bio />
+                <GeneralSkills />
+                <CategorizedSkills />
+            </div>
+        );
+    } 
 }
 
 export default App;
