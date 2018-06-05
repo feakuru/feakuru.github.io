@@ -86,8 +86,8 @@ class Bio extends Component {
                     <img src={ profile_pic } alt={
                         translate(
                             {
-                                "en": "A picture of me in London with a phone.",
-                                "ru": "Фото меня в Лондоне с телефоном в руке."
+                                "en": "A picture of me in London with a phone",
+                                "ru": "Фото меня в Лондоне с телефоном в руке"
                             },
                             this.props.lang
                         )
