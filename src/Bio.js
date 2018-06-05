@@ -7,12 +7,77 @@ class Bio extends Component {
         return (
             <div className="screen">
                 <div>
-                    Bio:
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum facere sed, eos delectus autem ex? Porro blanditiis nostrum aliquid numquam autem repellat, nesciunt totam architecto, quo expedita adipisci repudiandae. Ut?
+                    <h4>
+                        {
+                            translate(
+                                { "en": "Bio", "ru": "Обо мне" },
+                                this.props.lang
+                            )
+                        }
+                    </h4>
+                    <p>
+                        {
+                            translate(
+                                {
+                                    "en": "I was born and live in Moscow. Since early age, I loved computer games, " +
+                                        "which quickly led me to programming. In 2014, I entered Bauman Moscow State University's " +
+                                        "IU-3 department (\"Information systems and telecommunications\"), where I am studying now. " +
+                                        "My scientific interests are: Web, ML and AI, microcontroller programming.",
+                                    "ru": "Я родился и живу в Москве. С детства увлекался компьютерными играми, " +
+                                        "и это увлечение быстро переросло в интерес к программированию. В 2014 году " +
+                                        "я поступил в МГТУ им. Н. Э. Баумана на кафедру ИУ-3 \"Информационные системы и телекоммуникации\", " +
+                                        "где учусь до сих пор. Мои научные интересы: Web, машинное обучение и искуственный интеллект, " +
+                                        "программирование микроконтроллеров."
+                                },
+                                this.props.lang
+                            )
+                        }
+                    </p>
+                    <p>
+                        {
+                            translate(
+                                {
+                                    "en": "In terms of software development I prefer to define myself as an open source advocate. " +
+                                        "Particularly, I prefer Linux flavours (mainly Ubuntu) over any other OS for my professional " +
+                                        "and personal needs. My favourite programming languages are Python 3 and C++, although I have " +
+                                        "experience with many others. My professional experience is almost completely in the field " +
+                                        "of web development.",
+                                    "ru": "В вопросах разработки я определяю себя как сторонник открытого ПО, в частности, " +
+                                        "отдавая предпочтение различным дистрибутивам Linux (в основном Ubuntu) для работы. " +
+                                        "Мои основные языки программирования - Python 3 и C++, хотя у меня есть опыт и с другими языками. " +
+                                        "Мой профессиональный опыт практически целиком так или иначе связан с Web-разработкой."
+                                },
+                                //  16.10.Достаточно хорошо знаю английский язык: без труда читаю профессиональную 
+                                //  литературу и общаюсь с людьми на любые темы. Умею гуглить, стараюсь не задавать
+                                //   глупых вопросов, если уверен, что смогу найти ответ в интернете. 
+                                //   Прохожу курс Cisco CCNA, пока не получил сертификат, но уже хорошо понимаю модель
+                                // OSI и могу строить эффективные сети небольших размеров, а также администрировать их.
+                                // В плане soft skills проблем нет.
+                        this.props.lang
+                    )
+                }
+                    </p>
                 </div>
                 <div>
-                    General skills:
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tempore quod dolor excepturi impedit culpa aspernatur iure deleniti expedita repellat saepe aut quae velit, laborum assumenda optio delectus, molestias porro.
+                    <h4>
+                        {
+                            translate(
+                                {
+                                    "en": "Contacts",
+                                    "ru": "Контакты"
+                                },
+                                this.props.lang
+                            )
+                        }
+                    </h4>
+                    <ul className="contacts">
+                        <li>
+                            <a href="https://t.me/feakuru">Telegram</a>
+                        </li>
+                        <li>
+                            <a href="mailto:feanarokurufinve@gmail.com">E-mail</a>
+                        </li>
+                    </ul>
                 </div>
                 <div>
                     <img src={ profile_pic } alt={

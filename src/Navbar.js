@@ -15,9 +15,6 @@ class Navbar extends Component {
         return (
             <ul className="navbar">
                 <li className="nav-left">
-                    <a href="#">{ translate({"en": "Top", "ru": "Вверх"}, this.props.lang)}</a>
-                </li>
-                <li className="nav-left">
                     <span>
                         {
                             translate(
