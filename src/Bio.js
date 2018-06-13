@@ -66,19 +66,39 @@ class Bio extends Component {
                     </h4>
                     <ul className="contacts">
                         <li>
-                            <a target="blank" href="https://t.me/feakuru">Telegram</a>
+                            <a target="blank" href="https://t.me/feakuru">
+                                <span aria-hidden="true" className="fab fa-telegram" />
+                                &nbsp;
+                                Telegram
+                            </a>
                         </li>
                         <li>
-                            <a target="blank" href="mailto:feanarokurufinve@gmail.com">E-mail</a>
+                            <a target="blank" href="mailto:feanarokurufinve@gmail.com">
+                                <span aria-hidden="true" className="fa fa-envelope" />
+                                &nbsp;
+                                E-mail
+                            </a>
                         </li>
                         <li>
-                            <a target="blank" href="https://stackexchange.com/users/7648139/dmitry-orlov">StackOverflow</a>
+                            <a target="blank" href="https://stackexchange.com/users/7648139/dmitry-orlov">
+                                <span aria-hidden="true" className="fab fa-stack-overflow" />
+                                &nbsp;
+                                StackOverflow
+                            </a>
                         </li>
                         <li>
-                            <a target="blank" href="https://twitter.com/feakuru">Twitter</a>
+                            <a target="blank" href="https://twitter.com/feakuru">
+                                <span aria-hidden="true" className="fab fa-twitter-square" />
+                                &nbsp;
+                                Twitter
+                            </a>
                         </li>
                         <li>
-                            <a target="blank" href="https://www.linkedin.com/in/dmitry-orlov-05515a11a/">LinkedIn</a>
+                            <a target="blank" href="https://www.linkedin.com/in/dmitry-orlov-05515a11a/">
+                                <span aria-hidden="true" className="fab fa-linkedin" />
+                                &nbsp;
+                                LinkedIn
+                            </a>
                         </li>
                     </ul>
                 </div>
