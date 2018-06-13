@@ -6,7 +6,7 @@ class Bio extends Component {
     render() {
         return (
             <div className="screen">
-                <div>
+                <div className="half-screen">
                     <h4>
                         {
                             translate(
@@ -47,12 +47,12 @@ class Bio extends Component {
                                         "Мои основные языки программирования - Python 3 и C++, хотя у меня есть опыт и с другими языками. " +
                                         "Мой профессиональный опыт практически целиком так или иначе связан с Web-разработкой."
                                 },
-                        this.props.lang
-                    )
-                }
+                                this.props.lang
+                            )
+                        }
                     </p>
                 </div>
-                <div>
+                <div className="fifth-of-screen">
                     <h4>
                         {
                             translate(
@@ -82,7 +82,7 @@ class Bio extends Component {
                         </li>
                     </ul>
                 </div>
-                <div>
+                <div className="pull-up-on-mobile fifth-of-screen">
                     <img src={ profile_pic } alt={
                         translate(
                             {
