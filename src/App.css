@@ -154,3 +154,45 @@ ul.contacts > li > a:hover {
     background-color: #555;
     color: white;
 }
+
+.iconed-list {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.iconed-list-item {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 150px;
+}
+
+.iconed-list-item-icon {
+    background-color: lightslategrey;
+    font-size: 32px;
+    min-width: 64px;
+}
+
+.iconed-list-item-icon > .fa, .iconed-list-item-icon > .fab {
+    text-align: center;
+    padding: 58px 16px;
+}
+
+.iconed-list-item-text {
+    background-color: lightgray;
+    text-align: justify;
+    padding: 15px;
+    width: 100%;
+}
+
+@media(min-width: 768px) {
+    .iconed-list-item {
+        width: 33%;
+    }
+}
+
+@media(max-width: 768px) {
+    .iconed-list-item {
+        width: 100%;
+    }
+}
