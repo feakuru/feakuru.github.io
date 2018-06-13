@@ -65,41 +65,55 @@ class Bio extends Component {
                         }
                     </h4>
                     <ul className="contacts">
-                        <li>
-                            <a target="blank" href="https://t.me/feakuru">
-                                <span aria-hidden="true" className="fab fa-telegram" />
-                                &nbsp;
-                                Telegram
-                            </a>
-                        </li>
-                        <li>
-                            <a target="blank" href="mailto:feanarokurufinve@gmail.com">
-                                <span aria-hidden="true" className="fa fa-envelope" />
-                                &nbsp;
-                                E-mail
-                            </a>
-                        </li>
-                        <li>
-                            <a target="blank" href="https://stackexchange.com/users/7648139/dmitry-orlov">
-                                <span aria-hidden="true" className="fab fa-stack-overflow" />
-                                &nbsp;
-                                StackOverflow
-                            </a>
-                        </li>
-                        <li>
-                            <a target="blank" href="https://twitter.com/feakuru">
-                                <span aria-hidden="true" className="fab fa-twitter-square" />
-                                &nbsp;
-                                Twitter
-                            </a>
-                        </li>
-                        <li>
-                            <a target="blank" href="https://www.linkedin.com/in/dmitry-orlov-05515a11a/">
-                                <span aria-hidden="true" className="fab fa-linkedin" />
-                                &nbsp;
-                                LinkedIn
-                            </a>
-                        </li>
+                        {
+                            [
+                                {
+                                    iconClass: "fab fa-telegram",
+                                    link: "https://t.me/feakuru",
+                                    title: "Telegram"
+                                },
+                                {
+                                    link: "mailto:feanarokurufinve@gmail.com",
+                                    iconClass: "fa fa-envelope",
+                                    title: "E-mail"
+                                },
+                                {
+                                    link: "https://github.com/feakuru/",
+                                    iconClass: "fab fa-github",
+                                    title: "GitHub"
+                                },
+                                {
+                                    link: "https://stackexchange.com/users/7648139/dmitry-orlov",
+                                    iconClass: "fab fa-stack-overflow",
+                                    title: "StackOverflow"
+                                },
+                                {
+                                    link: "https://twitter.com/feakuru",
+                                    iconClass: "fab fa-twitter-square",
+                                    title: "Twitter"
+                                },
+                                {
+                                    link: "https://www.linkedin.com/in/dmitry-orlov-05515a11a/",
+                                    iconClass: "fab fa-linkedin",
+                                    title: "LinkedIn"
+                                },
+                                {
+                                    link: "https://stepik.org/users/48434329",
+                                    iconClass: "fab fa-stripe-s",
+                                    title: "Stepik"
+                                }
+                            ].map(
+                                (elt, idx) => (
+                                    <li key={ "contacts-item-" + (idx + 1) }>
+                                        <a target="_blank" href={ elt.link }>
+                                            <span aria-hidden="true" className={ elt.iconClass } />
+                                            &nbsp;
+                                            { elt.title }
+                                        </a>
+                                    </li>
+                                )
+                            )
+                        }
                     </ul>
                 </div>
                 <div className="pull-up-on-mobile fifth-of-screen">
