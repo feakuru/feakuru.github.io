@@ -66,19 +66,19 @@ class Bio extends Component {
                     </h4>
                     <ul className="contacts">
                         <li>
-                            <a href="https://t.me/feakuru">Telegram</a>
+                            <a target="blank" href="https://t.me/feakuru">Telegram</a>
                         </li>
                         <li>
-                            <a href="mailto:feanarokurufinve@gmail.com">E-mail</a>
+                            <a target="blank" href="mailto:feanarokurufinve@gmail.com">E-mail</a>
                         </li>
                         <li>
-                            <a href="https://stackexchange.com/users/7648139/dmitry-orlov">StackOverflow</a>
+                            <a target="blank" href="https://stackexchange.com/users/7648139/dmitry-orlov">StackOverflow</a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/feakuru">Twitter</a>
+                            <a target="blank" href="https://twitter.com/feakuru">Twitter</a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/dmitry-orlov-05515a11a/">LinkedIn</a>
+                            <a target="blank" href="https://www.linkedin.com/in/dmitry-orlov-05515a11a/">LinkedIn</a>
                         </li>
                     </ul>
                 </div>
