@@ -1,3 +1,10 @@
+ /* Color set "Watery blue-greens"
+  * #021c1e - "blue black"
+  * #004445 - "cadet blue"
+  * #2c7873 - "rain"
+  * #6fb98f - "greenery"
+  */
+
 .app {
     display: flex;
     flex-direction: column;
@@ -10,23 +17,24 @@ p {
 }
 
 .button {
-    padding: 10px 15px;
+    padding: 5px 7px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 8px 4px;
+    margin: 12px 4px;
+    height: 32px;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
-    background-color: white;
-    color: black;
-    border: 2px solid #555555;
+    background-color: #6fb98f;
+    color: #004445;
+    border: 2px solid #2c7873;
     border-radius: 5px;
 }
 
 .button:hover {
-    background-color: #555555;
+    background-color: #2c7873;
     color: white;
 }
 
@@ -35,12 +43,12 @@ ul.navbar {
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #2c7873;
 }
 
 ul.navbar > li {
     height: 60px;
-    background-color: #333;
+    background-color: #2c7873;
     vertical-align: middle;
 }
 
@@ -60,7 +68,7 @@ ul.navbar > li > a, ul.navbar > li > span {
 }
 
 ul.navbar > li > a:hover {
-    background-color: #111;
+    background-color: #021c1e;
 }
 
 .screen {
@@ -139,19 +147,20 @@ ul.contacts {
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: #f1f1f1;
+    border: 1px solid #2c7873;
+    border-radius: 5px;
 }
 
 ul.contacts > li > a {
     display: block;
-    color: #000;
+    color: #021c1e;
     padding: 8px 16px;
     text-decoration: none;
     text-align: center;
 }
 
 ul.contacts > li > a:hover {
-    background-color: #555;
+    background-color: #6fb98f;
     color: white;
 }
 
@@ -168,7 +177,8 @@ ul.contacts > li > a:hover {
 }
 
 .iconed-list-item-icon {
-    background-color: lightslategrey;
+    background-color: #2c7873;
+    color: #6fb98f;
     font-size: 32px;
     min-width: 64px;
 }
@@ -179,7 +189,7 @@ ul.contacts > li > a:hover {
 }
 
 .iconed-list-item-text {
-    background-color: lightgray;
+    border: 1px solid #2c7873;
     text-align: justify;
     padding: 15px;
     width: 100%;

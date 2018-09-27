@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import FontAwesome from 'react-fontawesome';
-import translate from './translation.js'
+import translate from './translation.js';
+import ruFlag from './ru-flag.png';
+import gbFlag from './gb-flag.png';
 
 class Navbar extends Component {
     downloadAsDoc() {
@@ -31,11 +33,13 @@ class Navbar extends Component {
                     <p>
                         <button className="button"
                             onClick={ e => this.props.setLang("ru") }>
-                            RU
+                            <img src={ruFlag} alt="RU"
+                                 style={{margin: 0, padding: 0, width: 18, height: "auto"}}/>
                         </button>
                         <button className="button"
                             onClick={ e => this.props.setLang("en") }>
-                            EN
+                            <img src={gbFlag} alt="EN"
+                                 style={{margin: 0, padding: 0, width: 18, height: "auto"}}/>
                         </button>
                     </p>
                 </li>
