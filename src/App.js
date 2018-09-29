@@ -21,6 +21,9 @@ class App extends Component {
                 <Bio lang={ this.state.lang } />
                 <GeneralSkills lang={ this.state.lang } />
                 <Experience lang={ this.state.lang } />
+                <div className="screen">
+                    <hr/>
+                </div>
             </div>
         );
     } 
