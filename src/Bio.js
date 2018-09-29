@@ -94,6 +94,11 @@ class Bio extends Component {
                                     title: "GitHub"
                                 },
                                 {
+                                    link: "https://www.linkedin.com/in/dmitry-orlov-05515a11a/",
+                                    iconClass: "fab fa-linkedin",
+                                    title: "LinkedIn"
+                                },
+                                {
                                     link: "https://stackexchange.com/users/7648139/dmitry-orlov",
                                     iconClass: "fab fa-stack-overflow",
                                     title: "StackOverflow"
@@ -102,11 +107,6 @@ class Bio extends Component {
                                     link: "https://twitter.com/feakuru",
                                     iconClass: "fab fa-twitter-square",
                                     title: "Twitter"
-                                },
-                                {
-                                    link: "https://www.linkedin.com/in/dmitry-orlov-05515a11a/",
-                                    iconClass: "fab fa-linkedin",
-                                    title: "LinkedIn"
                                 },
                                 {
                                     link: "https://stepik.org/users/48434329",
