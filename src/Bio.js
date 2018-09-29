@@ -64,17 +64,19 @@ class Bio extends Component {
                     </p>
                 </div>
                 <div className="fifth-of-screen">
-                    <h4>
-                        {
-                            translate(
-                                {
-                                    "en": "Contacts",
-                                    "ru": "Контакты"
-                                },
-                                this.props.lang
-                            )
-                        }
-                    </h4>
+                    <a name="contacts">
+                        <h4>
+                            {
+                                translate(
+                                    {
+                                        "en": "Contacts",
+                                        "ru": "Контакты"
+                                    },
+                                    this.props.lang
+                                )
+                            }
+                        </h4>
+                    </a>
                     <ul className="contacts">
                         {
                             [
