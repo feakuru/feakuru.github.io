@@ -27,7 +27,7 @@ class Experience extends Component {
                                              alt="BOXY"></img>,
                                 'text': <div>
                                     <h4>
-                                        <a href="https://boxy.ru" target="_blank">
+                                        <a href="https://boxy.ru" target="_blank" rel="noopener noreferrer">
                                             Boxy
                                                 </a>
                                     </h4>
@@ -77,8 +77,8 @@ class Experience extends Component {
                                 'icon': <i className="far fa-compass"></i>,
                                 'text': translate(
                                     {
-                                        'ru': 'кек',
-                                        'en': 'kek'
+                                        'ru': 'информация появится позже',
+                                        'en': 'no info yet'
                                     },
                                     this.props.lang
                                 )
@@ -87,8 +87,8 @@ class Experience extends Component {
                                 'icon': <i className="fas fa-globe"></i>,
                                 'text': translate(
                                     {
-                                        'ru': 'кек',
-                                        'en': 'kek'
+                                        'ru': 'информация появится позже',
+                                        'en': 'no info yet'
                                     },
                                     this.props.lang
                                 )
