@@ -6,6 +6,17 @@ class Bio extends Component {
     render() {
         return (
             <div className="screen">
+                <div className="pull-up-on-mobile fifth-of-screen">
+                    <img src={profile_pic} alt={
+                        translate(
+                            {
+                                "en": "A picture of me in London with a phone",
+                                "ru": "Фото меня в Лондоне с телефоном в руке"
+                            },
+                            this.props.lang
+                        )
+                    } />
+                </div>
                 <div className="half-screen">
                     <h4>
                         {
@@ -69,7 +80,7 @@ class Bio extends Component {
                             [
                                 {
                                     iconClass: "fab fa-telegram",
-                                    link: "https://t.me/feakuru",
+                                    link: "https://t-do.ru/feakuru",
                                     title: "Telegram"
                                 },
                                 {
@@ -104,11 +115,11 @@ class Bio extends Component {
                                 }
                             ].map(
                                 (elt, idx) => (
-                                    <li key={ "contacts-item-" + (idx + 1) }>
-                                        <a target="_blank" href={ elt.link }>
-                                            <span aria-hidden="true" className={ elt.iconClass } />
+                                    <li key={"contacts-item-" + (idx + 1)}>
+                                        <a target="_blank" href={elt.link}>
+                                            <span aria-hidden="true" className={elt.iconClass} />
                                             &nbsp;
-                                            { elt.title }
+                                            {elt.title}
                                         </a>
                                     </li>
                                 )
@@ -116,17 +127,7 @@ class Bio extends Component {
                         }
                     </ul>
                 </div>
-                <div className="pull-up-on-mobile fifth-of-screen">
-                    <img src={ profile_pic } alt={
-                        translate(
-                            {
-                                "en": "A picture of me in London with a phone",
-                                "ru": "Фото меня в Лондоне с телефоном в руке"
-                            },
-                            this.props.lang
-                        )
-                    }/>
-                </div>
+
             </div>
         );
     }

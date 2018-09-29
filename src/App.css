@@ -173,7 +173,6 @@ ul.contacts > li > a:hover {
 .iconed-list-item {
     display: flex;
     flex-flow: row nowrap;
-    height: 150px;
 }
 
 .iconed-list-item-icon {
@@ -183,9 +182,10 @@ ul.contacts > li > a:hover {
     min-width: 64px;
 }
 
-.iconed-list-item-icon > .fa, .iconed-list-item-icon > .fab {
+.iconed-list-item-icon > .fa, .iconed-list-item-icon > .fab, 
+.iconed-list-item-icon > .fas, .iconed-list-item-icon > .far {
     text-align: center;
-    padding: 58px 16px;
+    padding: 250% 25%;
 }
 
 .iconed-list-item-text {
@@ -205,4 +205,21 @@ ul.contacts > li > a:hover {
     .iconed-list-item {
         width: 100%;
     }
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border-bottom: 1px solid #004445;
+    padding: 10px;
+}
+
+table tr:last-child > td {
+    border-bottom: none;
+}
+
+td > img {
+    max-width: none;
 }

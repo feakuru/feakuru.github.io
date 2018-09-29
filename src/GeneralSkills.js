@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import translate from './translation.js'
+import translate from './translation.js';
+import ru_flag from './ru-flag.png';
+import gb_flag from './gb-flag.png';
+import fr_flag from './fr-flag.png';
 
 class GeneralSkills extends Component {
     render() {
@@ -20,31 +23,123 @@ class GeneralSkills extends Component {
                     {
                         [
                             {
-                                'icon': <i className="fab fa-python"></i>,
+                                'icon': <i className="fas fa-user-graduate"></i>,
                                 'text': translate(
                                     {
-                                        'ru': 'Мой любимый язык программирования. Активно работаю с ним с 2015.',
-                                        'en': 'My favourite programming language. Using it since 2015.'
+                                        'ru': <div>
+                                            Я постоянно работаю и знаком на высоком уровне со следующими языками:
+                                            <ul>
+                                                <li>Python (особенно Django)</li>
+                                                <li>C++</li>
+                                                <li>JavaScript (особенно ReactJS) и NodeJS</li>
+                                                <li>Clojure и ClojureScript</li>
+                                            </ul>
+                                            ...и технологиями:
+                                            <ul>
+                                                <li>ОС Linux</li>
+                                                <li>Git</li>
+                                                <li>СУБД SQL</li>
+                                                <li>Работа с командной строкой и SSH</li>
+                                            </ul>
+                                        </div>,
+                                        'en': <div>
+                                            I constantly work and have a serious experience 
+                                            with the following programming languages:
+                                            <ul>
+                                                <li>Python (especially Django)</li>
+                                                <li>C/C++</li>
+                                                <li>JavaScript (especially ReactJS) and NodeJS</li>
+                                                <li>Clojure and ClojureScript</li>
+                                            </ul>
+                                            ...and technologies:
+                                            <ul>
+                                                <li>Linux-based OS</li>
+                                                <li>Git</li>
+                                                <li>SQL DBMS</li>
+                                                <li>Bash and SSH</li>
+                                            </ul>
+                                        </div>
                                     },
                                     this.props.lang
                                 )
                             },
                             {
-                                'icon': <i className="fa fa-plus-circle"></i>,
+                                'icon': <i className="far fa-compass"></i>,
                                 'text': translate(
                                     {
-                                        'ru': 'С C/C++ я работаю с самого начала своего пути в программировании в 2014.',
-                                        'en': 'I use C++ since I began programming in 2014.'
+                                        'ru': <div>
+                                            Я периодически работаю и знаком на неплохом уровне со следующими языками:
+                                            <ul>
+                                                <li>Java</li>
+                                                <li>Golang</li>
+                                            </ul>
+                                            ...и технологиями:
+                                            <ul>
+                                                <li>MatLab/Octave</li>
+                                                <li>СУБД NoSQL</li>
+                                            </ul>
+                                        </div>,
+                                        'en': <div>
+                                            I work from time to time and have a good experience with the following programming languages:
+                                            <ul>
+                                                <li>Java</li>
+                                                <li>Golang</li>
+                                            </ul>
+                                            ...and technologies:
+                                            <ul>
+                                                <li>MatLab/Octave</li>
+                                                <li>NoSQL DBMS</li>
+                                            </ul>
+                                        </div>
                                     },
                                     this.props.lang
                                 )
                             },
                             {
-                                'icon': <i className="fab fa-git-square"></i>,
+                                'icon': <i className="fas fa-globe"></i>,
                                 'text': translate(
                                     {
-                                        'ru': 'Во всех своих проектах я активно использую Git, ' +
-                                            'следуя принципам Gitflow.',
+                                        'ru': <div>
+                                            Я знаю следующие языки:
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <img src={ru_flag} alt="RU"
+                                                            style={{ width: 32, margin: 0, borderRadius: 0 }} />
+                                                    </td>
+                                                    <td>
+                                                        <b>
+                                                            Русский
+                                                        </b>
+                                                    </td>
+                                                    <td>Мой родной язык</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src={gb_flag} alt="EN"
+                                                            style={{ width: 32, margin: 0, borderRadius: 0 }} />
+                                                    </td>
+                                                    <td>
+                                                        <b>
+                                                            Английский
+                                                        </b>
+                                                    </td>
+                                                    <td>Свободно читаю и пишу, могу разговаривать без труда</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src={fr_flag} alt="FR"
+                                                            style={{width: 32, margin: 0, borderRadius: 0}}/>
+                                                    </td>
+                                                    <td>
+                                                        <b>
+                                                            Французский
+                                                        </b>
+                                                    </td>
+                                                    <td>Могу читать и переводить, немного объясняться</td>
+                                                </tr>
+                                            </table>
+                                        </div>,
                                         'en': 'I use Git in all my projects and follow Gitflow.'
                                     },
                                     this.props.lang
