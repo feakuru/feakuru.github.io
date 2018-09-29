@@ -38,6 +38,7 @@ class GeneralSkills extends Component {
                                             <ul>
                                                 <li>ОС Linux</li>
                                                 <li>Git</li>
+                                                <li>Docker</li>
                                                 <li>СУБД SQL</li>
                                                 <li>Работа с командной строкой и SSH</li>
                                             </ul>
@@ -102,83 +103,87 @@ class GeneralSkills extends Component {
                                         'ru': <div>
                                             Я знаю следующие языки:
                                             <table>
-                                                <tr>
-                                                    <td>
-                                                        <img src={ru_flag} alt="RU"
-                                                            style={{ width: 32, margin: 0, borderRadius: 0 }} />
-                                                    </td>
-                                                    <td>
-                                                        <b>
-                                                            Русский
-                                                        </b>
-                                                    </td>
-                                                    <td>Мой родной язык</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <img src={gb_flag} alt="EN"
-                                                            style={{ width: 32, margin: 0, borderRadius: 0 }} />
-                                                    </td>
-                                                    <td>
-                                                        <b>
-                                                            Английский
-                                                        </b>
-                                                    </td>
-                                                    <td>Свободно читаю и пишу, могу разговаривать без труда</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <img src={fr_flag} alt="FR"
-                                                            style={{width: 32, margin: 0, borderRadius: 0}}/>
-                                                    </td>
-                                                    <td>
-                                                        <b>
-                                                            Французский
-                                                        </b>
-                                                    </td>
-                                                    <td>Могу читать и переводить, немного объясняться</td>
-                                                </tr>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <img src={ru_flag} alt="RU"
+                                                                style={{ width: 32, margin: 0, borderRadius: 0 }} />
+                                                        </td>
+                                                        <td>
+                                                            <b>
+                                                                Русский
+                                                            </b>
+                                                        </td>
+                                                        <td>Мой родной язык</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <img src={gb_flag} alt="EN"
+                                                                style={{ width: 32, margin: 0, borderRadius: 0 }} />
+                                                        </td>
+                                                        <td>
+                                                            <b>
+                                                                Английский
+                                                            </b>
+                                                        </td>
+                                                        <td>Свободно читаю и пишу, могу разговаривать без труда</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <img src={fr_flag} alt="FR"
+                                                                style={{width: 32, margin: 0, borderRadius: 0}}/>
+                                                        </td>
+                                                        <td>
+                                                            <b>
+                                                                Французский
+                                                            </b>
+                                                        </td>
+                                                        <td>Могу читать и переводить, немного объясняться</td>
+                                                    </tr>
+                                                </tbody>
                                             </table>
                                         </div>,
                                         'en': <div>
                                             I am familiar with the following languages:
                                             <table>
-                                                <tr>
-                                                    <td>
-                                                        <img src={ru_flag} alt="RU"
-                                                            style={{ width: 32, margin: 0, borderRadius: 0 }} />
-                                                    </td>
-                                                    <td>
-                                                        <b>
-                                                            Russian
-                                                        </b>
-                                                    </td>
-                                                    <td>My native language</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <img src={gb_flag} alt="EN"
-                                                            style={{ width: 32, margin: 0, borderRadius: 0 }} />
-                                                    </td>
-                                                    <td>
-                                                        <b>
-                                                            English
-                                                        </b>
-                                                    </td>
-                                                    <td>I read, write and communicate in English easily</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <img src={fr_flag} alt="FR"
-                                                            style={{ width: 32, margin: 0, borderRadius: 0 }} />
-                                                    </td>
-                                                    <td>
-                                                        <b>
-                                                            French
-                                                        </b>
-                                                    </td>
-                                                    <td>I can read, write and support a conversation in French</td>
-                                                </tr>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <img src={ru_flag} alt="RU"
+                                                                style={{ width: 32, margin: 0, borderRadius: 0 }} />
+                                                        </td>
+                                                        <td>
+                                                            <b>
+                                                                Russian
+                                                            </b>
+                                                        </td>
+                                                        <td>My native language</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <img src={gb_flag} alt="EN"
+                                                                style={{ width: 32, margin: 0, borderRadius: 0 }} />
+                                                        </td>
+                                                        <td>
+                                                            <b>
+                                                                English
+                                                            </b>
+                                                        </td>
+                                                        <td>I read, write and communicate in English easily</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <img src={fr_flag} alt="FR"
+                                                                style={{ width: 32, margin: 0, borderRadius: 0 }} />
+                                                        </td>
+                                                        <td>
+                                                            <b>
+                                                                French
+                                                            </b>
+                                                        </td>
+                                                        <td>I can read, write and support a conversation in French</td>
+                                                    </tr>
+                                                </tbody>
                                             </table>
                                         </div>
                                     },
