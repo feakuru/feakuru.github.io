@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import translate from './translation.js'
 
-class CategorizedSkills extends Component {
+class Experience extends Component {
     render() {
         return (
             <div className="screen">
@@ -11,4 +11,4 @@ class CategorizedSkills extends Component {
     }
 }
 
-export default CategorizedSkills;
+export default Experience;

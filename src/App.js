@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './Navbar.js';
 import Bio from './Bio.js';
 import GeneralSkills from './GeneralSkills.js';
-import CategorizedSkills from './CategorizedSkills.js';
+import Experience from './Experience.js';
 
 class App extends Component {
     constructor(props) {
@@ -20,7 +20,7 @@ class App extends Component {
                         setLang={ newLang => this.setState({lang: newLang}) }/>
                 <Bio lang={ this.state.lang } />
                 <GeneralSkills lang={ this.state.lang } />
-                <CategorizedSkills lang={ this.state.lang } />
+                <Experience lang={ this.state.lang } />
             </div>
         );
     } 
