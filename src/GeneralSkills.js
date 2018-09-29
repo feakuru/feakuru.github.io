@@ -8,7 +8,7 @@ class GeneralSkills extends Component {
     render() {
         return (
             <div className="screen">
-                <h4>
+                <h3>
                     {
                         translate(
                             {
@@ -18,7 +18,7 @@ class GeneralSkills extends Component {
                             this.props.lang
                         )
                     }
-                </h4>
+                </h3>
                 <div className="iconed-list">
                     {
                         [
@@ -76,7 +76,7 @@ class GeneralSkills extends Component {
                                             </ul>
                                             ...и технологиями:
                                             <ul>
-                                                <li>MatLab/Octave</li>
+                                                <li>HTML5+CSS3</li>
                                                 <li>СУБД NoSQL</li>
                                             </ul>
                                         </div>,
@@ -88,7 +88,7 @@ class GeneralSkills extends Component {
                                             </ul>
                                             ...and technologies:
                                             <ul>
-                                                <li>MatLab/Octave</li>
+                                                <li>HTML5+CSS3</li>
                                                 <li>NoSQL DBMS</li>
                                             </ul>
                                         </div>
