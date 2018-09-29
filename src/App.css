@@ -172,6 +172,7 @@ ul.contacts > li > a:hover {
 
 .iconed-list-item {
     display: flex;
+    border: 1px solid #004445;
     flex-flow: row nowrap;
 }
 
@@ -189,7 +190,6 @@ ul.contacts > li > a:hover {
 }
 
 .iconed-list-item-text {
-    border: 1px solid #2c7873;
     text-align: justify;
     padding: 15px;
     width: 100%;
