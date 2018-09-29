@@ -41,10 +41,6 @@ class Navbar extends Component {
                             <img src={gbFlag} alt="EN"
                                  style={{margin: 0, padding: 0, width: 18, height: "auto"}}/>
                         </button>
-                    </p>
-                </li>
-                <li className="nav-right">
-                    <p>
                         <button className="button"
                             onClick={e => this.downloadAsPdf()}>
                             <FontAwesome name='file-pdf' />

@@ -181,11 +181,12 @@ ul.contacts > li > a:hover {
     display: flex;
     border: 1px solid #004445;
     flex-flow: row nowrap;
+    overflow: auto;
 }
 
 .iconed-list-item-icon {
     background-color: #2c7873;
-    color: #6fb98f;
+    color: white;
     font-size: 32px;
     min-width: 64px;
 }
