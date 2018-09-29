@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import translate from './translation.js'
 import boxy_logo from './boxy-logo.svg';
+import anyconf_logo from './anyconf-logo.svg';
 
 class Experience extends Component {
     render() {
         return (
             <div className="screen">
-                <h4>
+                <h3>
                     {
                         translate(
                             {
@@ -16,7 +17,7 @@ class Experience extends Component {
                             this.props.lang
                         )
                     }
-                </h4>
+                </h3>
                 <div className="iconed-list">
                     {
                         [
@@ -74,14 +75,59 @@ class Experience extends Component {
                                 </div>
                             },
                             {
-                                'icon': <i className="far fa-compass"></i>,
-                                'text': translate(
-                                    {
-                                        'ru': 'информация появится позже',
-                                        'en': 'no info yet'
-                                    },
-                                    this.props.lang
-                                )
+                                'icon': <img src={anyconf_logo}
+                                    style={{
+                                        width: 44, maxWidth: 'none',
+                                        borderRadius: 0, margin: 10
+                                    }}
+                                    alt="AnyConf"></img>,
+                                'text': <div>
+                                    <h4>
+                                        <a href="https://anyconf.io" target="_blank" rel="noopener noreferrer">
+                                            AnyConf
+                                        </a>
+                                    </h4>
+                                    <hr />
+                                    <div>
+                                        {
+                                            translate(
+                                                {
+                                                    'ru': 'AnyConf - система управления ' +
+                                                        'конференциями и ивентами. Она включает ' +
+                                                        'в себя мобильные приложения под Android и iOS, ' +
+                                                        'бэкенд на python (Django) и веб-фронтенд ' +
+                                                        'для администраторов и модераторов площадок.',
+                                                    'en': 'AnyConf is a system for managing conferences' +
+                                                        'and other various events. It includes ' +
+                                                        'Android and iOS mobile apps as well as ' +
+                                                        'a backend system written in python (Django) and a ' +
+                                                        'web panel for administrators and moderators.'
+                                                },
+                                                this.props.lang
+                                            )
+                                        }
+                                    </div>
+                                    <br />
+                                    <div>
+                                        {
+                                            translate(
+                                                {
+                                                    'ru': 'В мои обязанности в этом проекте ' +
+                                                        'входила доработка бэкенд-инфраструктуры ' +
+                                                        'и веб-панели: управление площадками, ' +
+                                                        'создание событий, управление контактами ' +
+                                                        'пользователей и другой функционал.',
+                                                    'en': 'My responsibilities on this project ' +
+                                                        'included development of the backend infrastructure ' +
+                                                        'and web panel: platform management, ' +
+                                                        'event creation, user contact managment ' + 
+                                                        'and other functionality.',
+                                                },
+                                                this.props.lang
+                                            )
+                                        }
+                                    </div>
+                                </div>
                             },
                             {
                                 'icon': <i className="fas fa-globe"></i>,
