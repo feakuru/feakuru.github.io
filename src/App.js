@@ -1,10 +1,10 @@
 import './styles.css';
-import Resume from './Resume';
+import Screens from './screens/index';
 
 function App() {
   return (
     <div className='container'>
-      <Resume></Resume>
+      <Screens></Screens>
     </div>
   );
 }
